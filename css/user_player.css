@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    /*background: url("https://static.pexels.com/photos/46277/pexels-photo-46277.jpeg");*/
+    /*background: url("https://static.pexels.com/photos/237693/pexels-photo-237693.jpeg");*/
+    /*background: url("https://static.pexels.com/photos/311621/pexels-photo-311621.jpeg");*/
+    /*background: url("http://data.freehdw.com/yellow-lotus-car-free-background.jpg");*/
+    /*background: url("http://autodatz.com/wp-content/uploads/2017/05/Car-Background-Wallpaper-Hd-43-with-Car-Background-Wallpaper-Hd.jpg");*/
+    background: url("https://lh3.googleusercontent.com/-jy4ZVgpiTfQ/VtxVya092fI/AAAAAAAAAis/AdpAAV9Pmbc/s1600/Ankit%:;");
+    /*background: url("http://data.freehdw.com/yellow-lotus-car-free-background.jpg");*/
+    /*background: url("http://data.freehdw.com/yellow-lotus-car-free-background.jpg");*/
+    /*background: url("http://data.freehdw.com/yellow-lotus-car-free-background.jpg");*/
+    /*background: url("http://data.freehdw.com/yellow-lotus-car-free-background.jpg");*/
+    /*background: url("http://data.freehdw.com/yellow-lotus-car-free-background.jpg");*/
+    background-size: cover;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+/* login,money,gold_money */
+.login{
+    position: fixed;
+    top: 15px;
+    left: 25px;
+}
+.login_a:hover{
+    color: red;
+}
+
+.money{
+    position: fixed;
+    top: 15px;
+    left: 125px;
+    color: #00bf00;
+}
+
+.gold_money{
+    position: fixed;
+    top: 15px;
+    left: 255px;
+    color: #cdcd00;
+}
+
+.add_money{
+    position: fixed;
+    top: 12px;
+    left: 300px;
+    font-size: 25px;
+}
+.add_money:hover{
+    font-size: 35px;
+    color: red;
+    top:7px;
+    left:297px;
+}
+
+/* left div */
+
+.profile_div,.rating_div,.garage_div,.shop_div,.rule_div,.sign_out_div{
+    position: fixed;
+    left: 40px;
+    width: 200px;
+    height: 60px;
+    background: grey;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.profile_mid,.rating_mid,.garage_mid,.shop_mid,.rule_mid,.sign_out_mid{
+    width: 180px;
+    height: 35px;
+    margin: 10px 0 10px 10px;
+}
+
+.profile_div:hover,.rating_div:hover,.garage_div:hover,.shop_div:hover,.rule_div:hover,.sign_out_div:hover{
+    background: #4b4b4b;
+    margin: 0 0 0 20px ;
+    color: red;
+}
+
+/********/
+.profile_div{
+    top:50px;
+}
+.rating_div{
+    top:115px;
+}
+.garage_div{
+    top:180px;
+}
+.shop_div{
+    top:245px;
+}
+.rule_div{
+    top:310px;
+}
+.sign_out_div{
+    top:375px;
+}
+
+/* Races */
+
+.class_A_div,.class_B_div,.class_C_div,.class_D_div,
+.class_E_div,.class_F_div,.class_G_div,.class_H_div,
+.class_K_div,.class_L_div,.class_M_div,.class_N_div,
+.class_O_div,.class_P_div,.class_R_div,.class_S_div{
+    width: 210px;
+    height: 80px;
+    position: fixed;
+    background: red;
+    font-size: 45px;
+    transition: 1s;
+}
+
+.class_A_mid,.class_B_mid,.class_C_mid,.class_D_mid,
+.class_E_mid,.class_F_mid,.class_G_mid,.class_H_mid,
+.class_K_mid,.class_L_mid,.class_M_mid,.class_N_mid,
+.class_O_mid,.class_P_mid,.class_R_mid,.class_S_mid{
+    width: 180px;
+    height: 35px;
+    margin: 10px auto;
+    transition: 1s;
+}
+
+.class_A_div:hover,.class_B_div:hover,
+.class_C_div:hover,.class_D_div:hover,
+.class_E_div:hover,.class_F_div:hover,
+.class_G_div:hover,.class_H_div:hover,
+.class_K_div:hover,.class_L_div:hover,
+.class_M_div:hover,.class_N_div:hover,
+.class_O_div:hover,.class_P_div:hover,
+.class_R_div:hover,.class_S_div:hover{
+    background: #6b0000;
+    transition: 1s;
+}
+
+/* 1st line*/
+.class_A_div{
+    top:50px;
+    left: 400px;
+}
+.class_B_div{
+    top:50px;
+    left: 620px;
+}
+.class_C_div{
+    top:50px;
+    left: 840px;
+}
+.class_D_div{
+    top:50px;
+    left: 1060px;
+}
+/* 2nd line*/
+.class_E_div{
+    top:140px;
+    left: 400px;
+}
+.class_F_div{
+    top:140px;
+    left: 620px;
+}
+.class_G_div{
+    top:140px;
+    left: 840px;
+}
+.class_H_div{
+    top:140px;
+    left: 1060px;
+}
+/* 3rd line*/
+.class_K_div{
+    top:230px;
+    left: 400px;
+}
+.class_L_div{
+    top:230px;
+    left: 620px;
+}
+.class_M_div{
+    top:230px;
+    left: 840px;
+}
+.class_N_div{
+    top:230px;
+    left: 1060px;
+}
+/* 4th line*/
+.class_O_div{
+    top:320px;
+    left: 400px;
+}
+.class_P_div{
+    top:320px;
+    left: 620px;
+}
+.class_R_div{
+    top:320px;
+    left: 840px;
+}
+.class_S_div{
+    top:320px;
+    left: 1060px;
+}
+
+.price_img{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+}
+
+.img_2,.img_3{
+    display: none;
+}
+
+.price_money{
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    display: none;
+}
+
+
+

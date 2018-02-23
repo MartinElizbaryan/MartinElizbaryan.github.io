@@ -1,0 +1,299 @@
+/*@keyframes ptuyt{
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(360deg);
+
+    }
+}*/
+
+
+@font-face {
+    font-family: main;
+    src: url("../font/Knewave-Regular.ttf");
+}
+
+body{
+	/*background-image: url("https://images.pexels.com/photos/14676/pexels-photo-14676.png?w=940&h=650&auto=compress&cs=tinysrgb");*/
+    /*background-image: url("https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");*/
+    /*background-image: url("https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");*/
+    /*background-image: url("https://images.unsplash.com/photo-1447108636563-00ee74478efb?w=1401");*/
+    /*background-image: url("https://images.unsplash.com/photo-1500741236341-1b7a0f91f1f6?w=1500");*/
+    /*background-image: url("https://images.pexels.com/photos/218983/pexels-photo-218983.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");*/
+    /*background:black;*/
+
+    background-image: url("https://images.unsplash.com/photo-1494122353634-c310f45a6d3c?w=1500");	
+
+    /*background-image: url("https://images.unsplash.com/photo-1501476642098-01fd11377676?w=1500");*/
+    /*background-image: url("https://cdn.pixabay.com/photo/2017/08/22/00/27/car-dashboard-2667434_960_720.jpg");*/
+    /*background-image: url("https://cdn.pixabay.com/photo/2017/07/22/22/56/sunset-2530165_960_720.jpg");*/
+    /*background-image: url("https://cdn.pixabay.com/photo/2016/11/21/14/05/buildings-1845587_960_720.jpg");*/
+    /*background-image: url("https://cdn.pixabay.com/photo/2016/11/21/14/05/buildings-1845587_960_720.jpg");*/
+
+
+
+    /*background-image: url("https://futuremarketsinc.com/wp-content/uploads/2017/08/9653138_ml.jpg");	*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+	overflow: hidden;
+	cursor: url(../icon/cursor_white.png),pointer;
+	font-family: main;
+}
+
+
+.main{
+
+	width: 1366px;
+	height: 700px;
+	margin: 0 auto;
+	/*background: red;*/
+
+}
+
+/*Left Menu*/
+
+.left{
+	width: 300px;
+	height: 580px; /* Hashvaca */
+	/*background: gray;*/
+	float: left;
+
+}
+
+.car{
+    position: relative;
+    /*float: left;*/
+    display: inline-block;
+    font-family: cursive;
+	width: 290px;
+	height: 110px;
+	/*background-image: url(../img/cars/bmw_1series.png);*/
+    background-size: cover;
+    background-position: center;
+    /*box-shadow: 0 0 25px white;*/
+    /*background: orange;*/
+    /*margin: 5px auto;*/
+    overflow: hidden;
+}
+
+.car2,
+.car3,
+.car4,
+.car5{
+    /*display: none;*/
+}
+
+.come{
+    position: absolute;
+    top: -110px;
+    margin: auto;
+    background: rgba(0,0,0,0.7);
+    transition: 1s;
+    width: 290px;
+    height: 110px;
+}
+
+.car:hover .come{
+   top: 0;
+}
+
+.car_name{
+    width: 90%;
+    height: 30px;
+    /*background: red;*/
+    float: left;
+    text-align: center;
+}
+.car_class{
+    height: 20px;
+    width: 6%;
+    float: right;
+    background: blue;
+    text-align: center;
+    font-size: 13px;
+}
+
+.car_stat{
+    font-size: 13px;
+    letter-spacing: 2px;
+
+
+}
+
+.max_point,.cornering,.breaking,.acceleration{
+    color: red;
+}
+
+
+/*Gic*/
+
+.gic{
+    width: 10px;
+    height: 580px;
+    /*background: black;*/
+    box-shadow: 0 0 25px white;
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+
+/*Right Menu*/
+
+.right{
+    /*background:gray;*/
+    width: 1000px;
+    height: 580px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    float: right;
+    margin-right: 45px;
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;*/
+}
+
+.buy_car{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-family: cursive;
+    font-size: 25px;
+    width: 300px;
+    height: 170px;
+    margin-bottom: 10px;
+    /*background: green;*/
+    background-size: 100%;
+    background-position: center;
+    background-attachment: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    margin-left: 18px;
+}
+
+.class{
+    color: white;
+    width: 98%;
+    height: 70px;
+    /*background: red;*/
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 10px;
+    /*box-shadow: 0 0 100px #2196F3;*/
+    /*box-shadow: 0 0 100px red;*/
+    /*box-shadow: 0 0 100px #4CAF50;*/
+    /*box-shadow: 0 0 100px #FF9602;*/
+    /*box-shadow: 0 0 100px #337AB7;*/
+    /*box-shadow: 0 0 100px purple;*/
+    /*box-shadow: 0 0 100px #765429;*/
+    box-shadow: 0 0 100px black;
+    margin: 10px auto;
+}
+
+.car_info{
+    position: absolute;
+    /*transition: 1s;*/
+    left: -318px;
+    width: 100%;
+    height: 170px;
+    background: rgba(0,0,0,0.6);
+    /*text-align: center;*/
+}
+
+
+.buy_car_name{
+    width: 90%;
+    height: 30px;
+    /*background: #4CAF50;*/
+    float: left;
+    text-align: center;
+}
+.buy_car_class{
+    height: 20px;
+    width: 6%;
+    float: right;
+    background: black;
+    text-align: center;
+    font-size: 13px;
+}
+
+.buy_car_stat{
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-size: 17px;
+    /*text-align: center;*/
+
+
+
+}
+
+
+.buying_car1{
+    background-image: url(../cars_Remastered/rang_rover_2.png);
+    /*background-size: 130%;*/
+    /*background-position: top;*/
+}
+
+
+.buying_car2{
+    background-image: url(../cars_Remastered/range-rover.png);
+}
+
+
+
+.buying_car3{
+    background-image:  url(../cars_Remastered/bmw_x6.png);
+}
+
+
+/*.buy_car:hover .car_info{
+    left: 0;
+}*/
+
+.buy_max_point,.buy_cornering,.buy_breaking,.buy_acceleration{
+    color: red;
+}
+
+
+.buying{
+    width: 100%;
+    height: 45px;
+    /*background: red;*/
+}
+
+.price{
+    float: left;
+    width: 150px;
+    height: 45px;
+    /*background: yellow;*/
+    color: green;
+}
+
+.buy_price{
+    color: green;
+    /*font-weight: 900;*/
+    font-family: main;
+}
+
+.buy_btn{
+    float: right;
+    width: 100px;
+    background: transparent;
+    height: 44px;
+    border: none;
+    font-size: 25px;
+    letter-spacing: 3px;
+    border: 2px solid red;
+    color: red;
+    /*transition: 1s;*/
+}
+
+.buy_btn:hover{
+    border: 5px solid red;
+    height: 43px;
+    cursor: pointer;
+
+}

@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background: url("../img/back45.png");
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+/* login,money,gold_money */
+
+/* Table */
+table{
+    margin-top: 50px;
+    margin-left: 200px;
+
+}
+
+table,tr,th,td{
+
+    border:1px solid white;
+    padding: 3px;
+    font-size: 20px;
+    text-align: center;
+}
+tr{
+    width: 800px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+    color: black;
+}
+th,td{
+    width: 100px;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.gold{
+    background: #F3D43E;
+    color: black;
+}
+.silver{
+    background: #B4B5B7;
+    color: black;
+}
+.bronze{
+    background: #A2852B;
+    color: black;
+}
+.how_many{
+}
+
+
+

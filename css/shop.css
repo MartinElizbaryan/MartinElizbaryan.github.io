@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background: url("../img/back45.png");
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.red{
+    color: red;
+    font-weight: bold;
+}
+
+.green:hover{
+    color: #00bf00;
+}
+
+/* login,money,gold_money */
+
+
+/* Left Menu */
+.left_menu{
+    width: 350px;
+    height: 650px;
+    position: fixed;
+    top:50px;
+    left: 20px;
+}
+
+/***************************************** Car 1,2,3,4,5 ***********************************************/
+
+.car_1,.car_2,.car_3,.car_4,.car_5{
+    width: 350px;
+    height: 120px;
+    margin-bottom: 10px;
+    background: gray;
+}
+
+.car_2,.car_3,.car_4,.car_5{
+    display: none;
+}
+
+.car_1_name,.car_2_name,.car_3_name,.car_4_name,.car_5_name{
+    height: 35px;
+    margin-bottom: 10px;
+}
+.car_1_text,.car_2_text,.car_3_text,.car_4_text,.car_5_text{
+    text-align: center;
+    font-size: 32px;
+    float: left;
+    margin-left: 20px;
+}
+.car_1_class,.car_2_class,.car_3_class,.car_4_class,.car_5_class{
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    background: blue;
+    float: right;
+    text-align: center;
+    display: none;
+}
+
+.car_static{
+    height: 75px;
+    border-top: 2px solid black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.car_1_maxSpeed,.car_2_maxSpeed,.car_3_maxSpeed,.car_4_maxSpeed,.car_5_maxSpeed{
+    width: 47%;
+    float: left;
+    display: none;
+}
+.car_1_acceleration,.car_2_acceleration,.car_3_acceleration,.car_4_acceleration,.car_5_acceleration{
+    width: 51%;
+    float: right;
+    display: none;
+}
+.car_1_braking,.car_2_braking,.car_3_braking,.car_4_braking,.car_5_braking{
+    width: 47%;
+    float: left;
+    display: none;
+}
+.car_1_cornering,.car_2_cornering,.car_3_cornering,.car_4_cornering,.car_5_cornering{
+    width: 51%;
+    float: right;
+    display: none;
+}
+
+
+/*********************************************** Buying Cars ***********************************************/
+
+/* Cars */
+.right_menu{
+    color: white;
+    width: 850px;
+    height: 650px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 280px;
+    box-shadow: 0 0 25px black;
+}
+
+.buy_car{
+    background: black;
+    width: 265px;
+    height: 150px;
+    float: left;
+    margin:0 8px 20px;
+}
+
+.buy_car_name{
+    width: 100%;
+    height: 40px;
+}
+
+.buy_1_text,.buy_2_text,.buy_3_text,.buy_4_text,.buy_5_text{
+    text-align: center;
+    font-size: 32px;
+    float: left;
+    margin-left: 20px;
+}
+
+
+
+.buy_1_class,.buy_2_class,.buy_3_class,.buy_4_class,.buy_5_class{
+    color: white;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    background: blue;
+    float: right;
+    text-align: center;
+}
+
+
+.buy_car_static{
+    height: 50px;
+    border-top: 2px solid black;
+    font-size: 20px;
+}
+
+.buy_maxSpeed{
+    width: 47%;
+    float: left;
+}
+.buy_acceleration{
+    width: 51%;
+    float: right;
+}
+.buy_braking{
+    width: 47%;
+    float: left;
+}
+.buy_cornering{
+    width: 51%;
+    float: right;
+}
+
+
+
+.buy_car_price{
+    border-top: 2px solid blue;
+    font-size: 30px;
+    color: #00bf00;
+    padding-left: 20px;
+}
+
+.green{
+    float: right;
+    margin-right: 20px;
+    color: red;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

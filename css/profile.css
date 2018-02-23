@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background: url("../img/back45.png");
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+/* login,money,gold_money */

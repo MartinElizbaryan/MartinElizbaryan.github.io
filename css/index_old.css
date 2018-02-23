@@ -1,0 +1,255 @@
+@font-face {
+    font-family: main;
+    src: url("../font/Knewave-Regular.ttf");
+}
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    font-family: main;
+    /*background: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/348781.jpg");*/
+    /*background: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/driver-san-francisco-car-wallpapers.jpg");*/
+    /*background: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/game-wallpapers-cool-race-car-wallpapers-wallpaper-31326.jpg");*/
+    /*background: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/muscle-car-wallpaper.jpg");*/
+    background-image: url("../bg/bg_driving.jpeg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: white;
+    cursor:url(../icon/cursor3.png),pointer;
+    height: 100vh;
+    width: 100%;
+}
+/* Day of Car */
+
+.name_of_game p{
+    font-size: 150px;
+    position: fixed;
+}
+
+.small_letter{
+    font-size: 90px;
+}
+
+.day{
+    top:50px;
+    left:100px;
+    color: red;
+}
+
+.of{
+    top:150px;
+    left:330px;
+    color: blue;
+}
+
+.car{
+    top:250px;
+    left:500px;
+    color: orange;
+}
+
+/* Input */
+
+.sign_in{
+    background: black;
+    width: 500px;
+    height: 600px;
+    position: fixed;
+    top:50px;
+    right: 100px;
+}
+
+.mid{
+    background: rgb(252,255,244);
+    background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%);
+    background: linear-gradient(to bottom, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+    width: 480px;
+    height: 580px;
+    margin: 10px auto;
+}
+
+.input{
+    padding-left: 20px;
+    transition: 1s;
+    width: 360px;
+    height: 45px;
+    font-size: 20px;
+    margin: 35px 60px 0;
+    border: 2px solid black;
+    background: #eeeeee;
+    background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#eeeeee 100%);
+    background: linear-gradient(to bottom, #eeeeee 0%,#eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 );
+}
+.input:focus{
+    border: 2px solid black;
+    outline: 0px;
+    letter-spacing: 3px;
+    border-radius: 0 0 35px 35px;
+    color: white;
+    background: green;
+}
+
+.input:hover{
+    cursor:url(../icon/cursor1.png),pointer;
+}
+
+.input::-webkit-input-placeholder{
+    color: green;
+}
+.input:focus::-webkit-input-placeholder{
+    color: white;
+}
+
+.input::-moz-input-placeholder{
+    color: green;
+}
+.input:focus::-moz-input-placeholder{
+    color: white;
+}
+
+.sign_div{
+    border: 1px solid #348905;
+    color: white;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    margin: 35px 190px 0;
+    background: #b4ddb4;
+    background: -webkit-linear-gradient(#b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    background: -o-linear-gradient(#b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    background: linear-gradient(#b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 );
+}
+
+.sign_div:hover{
+    cursor:url(../icon/cursor1.png),pointer;
+    background: #b4ddb4;
+    background: -moz-linear-gradient(-45deg, #b4ddb4 0%, #002400 0%, #83c783 32%, #83c783 32%, #52b152 33%, #008a00 67%, #005700 83%);
+    background: -webkit-linear-gradient(-45deg, #b4ddb4 0%,#002400 0%,#83c783 32%,#83c783 32%,#52b152 33%,#008a00 67%,#005700 83%);
+    background: linear-gradient(135deg, #b4ddb4 0%,#002400 0%,#83c783 32%,#83c783 32%,#52b152 33%,#008a00 67%,#005700 83%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#005700',GradientType=1 );
+}
+.reg_div{
+    font-family: Arial;
+    text-align: center;
+    width: 320px;
+    height: 45px;
+    font-size: 35px;
+    margin: 15px 80px 0;
+    border:0.5px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: rgb(41,154,11);
+    background: -moz-linear-gradient(top, rgba(41,154,11,1) 0%, rgba(10,35,2,1) 78%, rgba(10,35,2,1) 91%);
+    background: -webkit-linear-gradient(top, rgba(41,154,11,1) 0%,rgba(10,35,2,1) 78%,rgba(10,35,2,1) 91%);
+    background: linear-gradient(to bottom, rgba(41,154,11,1) 0%,rgba(10,35,2,1) 78%,rgba(10,35,2,1) 91%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#299a0b', endColorstr='#0a2302',GradientType=0 );
+    
+}
+.reg_a{
+    margin:5px 75px;
+    color:white;
+}
+
+/*Registration hover*/
+.reg_div:hover{
+    cursor:url(../icon/cursor1.png),pointer;
+    width: 320px;
+    height: 45px;
+    background: #b4ddb4;
+    background: -moz-linear-gradient(45deg, #b4ddb4 0%, #008a00 43%, #83c783 43%, #52b152 43%, #83c783 43%, #005700 83%, #002400 100%);
+    background: -webkit-linear-gradient(45deg, #b4ddb4 0%,#008a00 43%,#83c783 43%,#52b152 43%,#83c783 43%,#005700 83%,#002400 100%);
+    background: linear-gradient(45deg, #b4ddb4 0%,#008a00 43%,#83c783 43%,#52b152 43%,#83c783 43%,#005700 83%,#002400 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=1 );
+}
+
+/* Span */
+
+.span_1{
+    font-size: 30px;
+    position: fixed;
+    bottom: 230px;
+    left: 225px;
+}
+
+.span_2{
+    font-size: 30px;
+    position: fixed;
+    bottom: 195px;
+    left: 285px;
+}
+
+.span_3{
+    font-size: 30px;
+    position: fixed;
+    bottom: 160px;
+    left: 170px;
+}
+
+.span_4{
+    font-size: 30px;
+    position: fixed;
+    bottom: 125px;
+    left: 103px;
+}
+/*Icons for login and password*/
+.icon1{
+        background: url(../icon/icons8-User-50.png);
+        width: 32px;
+        height: 32px;
+        background-size:cover;
+        position: relative;
+        top: 80px;
+        left: 10px;
+}
+.icon2{
+        background: url(../icon/icons8-Password-48.png);
+        width: 35px;
+        height: 35px;
+        background-size:cover;
+        position: relative;
+        top: 82px;
+        left: 10px;
+}
+.icon3{
+        background: url(../icon/signIn.png);
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        background-size:cover;
+        position: relative;
+        left: 140px;
+        top:78px;
+
+}
+
+.icon4{
+        background: url(../icon/reg.png);
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        background-size:cover;
+        position: relative;
+        top:62px;
+        left: 25px;
+
+}
+/*Placeholder color change;*/

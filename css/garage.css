@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background: url("../img/back45.png");
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.red{
+    color: #0d1dff;
+    font-weight: bold;
+}
+
+.green:hover{
+    color: #00bf00;
+}
+
+/* login,money,gold_money */
+
+
+/* Left Menu */
+.left_menu{
+    width: 350px;
+    height: 650px;
+    position: fixed;
+    top:50px;
+    left: 20px;
+}
+
+/***************************************** Car 1,2,3,4,5 ***********************************************/
+
+.car_1,.car_2,.car_3,.car_4,.car_5{
+    width: 350px;
+    height: 120px;
+    margin-bottom: 10px;
+    background: gray;
+}
+
+
+.car_1_name,.car_2_name,.car_3_name,.car_4_name,.car_5_name{
+    height: 35px;
+    margin-bottom: 10px;
+}
+.car_1_text,.car_2_text,.car_3_text,.car_4_text,.car_5_text{
+    text-align: center;
+    font-size: 32px;
+    float: left;
+    margin-left: 20px;
+}
+.car_1_class,.car_2_class,.car_3_class,.car_4_class,.car_5_class{
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    background: blue;
+    float: right;
+    text-align: center;
+}
+
+.car_static{
+    height: 75px;
+    border-top: 2px solid black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.car_1_maxSpeed,.car_2_maxSpeed,.car_3_maxSpeed,.car_4_maxSpeed,.car_5_maxSpeed{
+    width: 47%;
+    float: left;
+}
+.car_1_acceleration,.car_2_acceleration,.car_3_acceleration,.car_4_acceleration,.car_5_acceleration{
+    width: 51%;
+    float: right;
+}
+.car_1_braking,.car_2_braking,.car_3_braking,.car_4_braking,.car_5_braking{
+    width: 47%;
+    float: left;
+}
+.car_1_cornering,.car_2_cornering,.car_3_cornering,.car_4_cornering,.car_5_cornering{
+    width: 51%;
+    float: right;
+}
+
+
+/************************************************** Upgrades ***********************************************/
+
+
+
+
+.right_menu{
+    color: white;
+    width: 850px;
+    height: 650px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 280px;
+    box-shadow: 0 0 25px black;
+    display: none;
+}
+
+.content{
+    background: black;
+    width: 265px;
+    height: 150px;
+    float: left;                                 /* i don't know yet*/
+    margin:25px 9px 50px;
+    display: none;
+}
+
+.upgrade_name{
+    margin: 5px auto;
+    text-align: center;
+    font-size: 32px;
+}
+
+.upgrade_result{
+    height: 40px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 10px auto;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    background: #343434;
+}
+
+
+.upgrade_price{
+    color: #00bf00;
+    margin: 0 25px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+}
+
+.upgrade_button{
+    transition: 1s;
+    margin: 0 25px;
+    float: right;
+    text-align: center;
+    font-size: 25px;
+}
+
+.upgrade_button:hover{
+    color: red;
+}
+
+
+
+
+
+
