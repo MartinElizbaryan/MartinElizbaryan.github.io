@@ -1,0 +1,34 @@
+@font-face {
+    font-family: name;
+    src: url("../../font/font5.otf");
+}
+
+@font-face {
+    font-family: input;
+    src: url("../../font/New Comic BD Shadow.otf");
+}
+
+@font-face {
+    font-family: input2;
+    src: url("../../font/New Comic BD.otf");
+}
+
+*{
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+    /*cursor:url(../../icon/cursor_white.png),pointer;*/
+}
+
+
+button:active,
+button:focus,
+input:active,
+input:focus{
+    outline: none;
+}
+
+input:hover{
+    cursor: pointer;
+    transition: 0.5s;
+}
