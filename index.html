@@ -83,7 +83,7 @@
 <script>
     $(document).ready(function(){
         var w = parseInt($("#slider_image").css("width"))
-        $("#slider_image,.our_carousel").css("height",w/2 + "px")
+        $("#slider_image,.our_carousel").css("height",w/2.2 + "px")
         $(".opacity_name").css("font-size",w/10 + "px")
         $(".opacity_name").css("height",w/19 + "px")
             
@@ -162,11 +162,10 @@
             }
         })
 
+       
+
         $(".login_image>img").mouseenter(function(){
-            $(".login_image>img").attr("src","img/person_click.png")
-            setTimeout(function(){
-                $(".login_image>img").attr("src","img/person.png")
-            },200)
+            winking()
         })
 
         $("#sign_in").click(function(){
@@ -205,10 +204,20 @@
             })
             $("#slider_image").fadeIn(400)
         }
+        function winking(){
+            $(".login_image>img").attr("src","img/person_click.png")
+            setTimeout(function(){
+                $(".login_image>img").attr("src","img/person.png")
+            },200)
+        }
 
         setInterval(function(){
             next()
         },5000)
+
+        setInterval(function(){
+            winking()
+        },3000)
 
         setInterval(function(){
             var color = $(".name_of_game").css("color")
