@@ -411,6 +411,7 @@ body{
 	.name_of_game{
 		/*display: none;*/
 		width: 96%;
+		margin: 15px 0;
 		/*padding: 0;*/
 		/*margin: 1% auto;*/
 		/*border-right:3px solid white;*/
