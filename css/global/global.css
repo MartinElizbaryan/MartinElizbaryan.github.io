@@ -14,8 +14,8 @@
 }
 
 *{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     /*cursor:url(../../icon/cursor_white.png),pointer;*/
 }
@@ -32,3 +32,17 @@ input:hover{
     cursor: pointer;
     transition: 0.5s;
 }
+
+table{
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-family: input2;
+    width: 80%;
+    font-size: 20px;
+}
+
+table,td,th{
+    border:3px solid #397dc6;
+    padding: 5px;
+}
+
