@@ -295,18 +295,12 @@ a{
 }*/
 
 @media (max-width: 1160px){
-	body{
-		background: red;
-	}
 	.clock{
 		display: none;
 	}
 }
 
 @media (max-width: 980px){
-	body{
-		background: yellow;
-	}
 	.property{
 		position: relative;
 		width: 300px;
@@ -325,9 +319,6 @@ a{
 
 
 @media (max-width: 695px){
-	body{
-		background: green;
-	}
 	.property{
 		width: 200px;
 		top: -5px;
@@ -347,9 +338,6 @@ a{
 }
 
 @media (max-width: 595px){
-	body{
-		background: blue;
-	}
 	.block:nth-child(1){
 		display: block;
 	}
@@ -362,9 +350,6 @@ a{
 }
 
 @media (max-width: 345px){
-	body{
-		background: white;
-	}
 	.property{
 		width: 168px;
 	}
