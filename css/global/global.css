@@ -50,7 +50,8 @@ td{
     font-size: 18px;
 }
 /*397dc6*/
-tr:first-child{
+tr:nth-child(1),
+tr:nth-child(2){
     background: #2F61C6;
     font-weight: bold;
 }
