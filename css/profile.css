@@ -2,10 +2,10 @@
 	padding: 20px 10px 0;
 	box-sizing: border-box;
 	width: 100%;
-	height: 200px;
 	margin: 0 auto;
 	overflow: hidden;
     overflow-x: scroll;
+    /*background: pink;*/
 }
 
 .table_middle table{
@@ -21,10 +21,7 @@
 }
 
 @media (max-width: 570px){
-	table{
-		font-size: 14px;
-	}
 	#name_of_game{
-		font-size: 20px;
+		font-size: 24px;
 	}
 }

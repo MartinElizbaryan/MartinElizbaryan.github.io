@@ -1,11 +1,12 @@
 body{
+	position: relative;
 	background: #397dc6;
 }
 
 a{
 	color:#397dc6;
 	display: block;
-	transition: 0.2s;
+	transition: 0.001s;
 	font-size: 24px;
 }
 
@@ -18,7 +19,7 @@ a{
 	padding: 15px;
 	font-family: input2;
 	font-size: 25px;
-	box-sizing: border-box;
+	box-sizing: border-box;	
 }
 
 .profile_image{
@@ -53,7 +54,7 @@ a{
 	width: 40%;
 	min-width: 190px;
 	/*background: green;*/
-	color: red;
+	color: #f41d2b;
 	float: left;
 	text-align: center;
 	box-sizing: border-box;
@@ -62,7 +63,7 @@ a{
 
 .money{
 	width: 40%;
-	color: #00FF00;
+	color: #20e84b;
 	/*background: red;*/
 	float: left;
 	text-align: center;
@@ -74,7 +75,8 @@ a{
 	/*background: deeppink;*/
 	float: left;
 	text-align: center;
-	color: #F6B400;
+	/*color: #F6B400;*/
+	color: #f4de18;
 }
 
 .gold_icon{
@@ -88,7 +90,7 @@ a{
 	/*background: orange;*/
 	float: right;
 	text-align: center;
-	color: red;
+	color: #f41d2b;
 }
 
 .real_clock{
@@ -180,10 +182,12 @@ a{
 	margin: 0 auto;
 }
 
+
 .block{
 	width: 100%;
 	padding: 5px;
 	border: 2px solid #397dc6;
+	border-left: 45px solid #397dc6;
 	border-radius:7px;
 	box-sizing: border-box;
 	text-align: center;
@@ -196,29 +200,41 @@ a{
 	/*background: black;*/
 	background-size: cover;
 	background-position: bottom;
+	transition: 0.001s;
 }
 
 .block:nth-child(1){
 	display: none;
+	border: 2px solid #397dc6;
 }
 
-.block a:hover,.block:hover{
-	color: #0044ff;
+#go_out:hover a,#go_out:hover {
+	color: red;
+}
+
+#go_out:hover {
+	border:2px solid red;
+	border-left: 45px solid red;
+
+}
+.block:hover a,.block:hover{
+	color: blue;
 	cursor: pointer;
 }
 .block:hover{
-	border:2px solid #0044ff;
-
+	border:2px solid blue;
+	border-left: 45px solid blue;
+	box-shadow: 0 0 100px white;
 }
-.block:hover .minuss{
+/*.block:hover .minuss{
 	background-image: url(../icon/minus_green.png);
 }
 .block:hover .pluss{
 	background-image: url(../icon/plus_green.png);
-}
+}*/
 
 .block:hover .top_border{
-	border-top: 1px solid white; 
+	/*border-top: 1px solid white; */
 }
 .block.plus p{
 	transition: 0.2s;
@@ -273,7 +289,7 @@ a{
 }
 
 .drop>.top_border{
-	border-top: 1px solid red;
+	border-top: 1px solid #397dc6;
 }
 
 /* Scroll */
@@ -295,12 +311,18 @@ a{
 }*/
 
 @media (max-width: 1160px){
+	body{
+		background: red;
+	}
 	.clock{
 		display: none;
 	}
 }
 
 @media (max-width: 980px){
+	body{
+		background: yellow;
+	}
 	.property{
 		position: relative;
 		width: 300px;
@@ -317,8 +339,10 @@ a{
 	}
 }
 
-
 @media (max-width: 695px){
+	body{
+		background: green;
+	}
 	.property{
 		width: 200px;
 		top: -5px;
@@ -338,6 +362,9 @@ a{
 }
 
 @media (max-width: 595px){
+	body{
+		background: blue;
+	}
 	.block:nth-child(1){
 		display: block;
 	}
@@ -350,6 +377,9 @@ a{
 }
 
 @media (max-width: 345px){
+	body{
+		background: white;
+	}
 	.property{
 		width: 168px;
 	}
