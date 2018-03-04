@@ -55,6 +55,7 @@ a{
 	min-width: 190px;
 	/*background: green;*/
 	color: #f41d2b;
+	/*color: #AF61A6;*/
 	float: left;
 	text-align: center;
 	box-sizing: border-box;
@@ -63,7 +64,7 @@ a{
 
 .money{
 	width: 40%;
-	color: #20e84b;
+	color: #29cb4c;
 	/*background: red;*/
 	float: left;
 	text-align: center;
@@ -75,8 +76,8 @@ a{
 	/*background: deeppink;*/
 	float: left;
 	text-align: center;
-	/*color: #F6B400;*/
-	color: #f4de18;
+	color: #F6B400;
+	/*color: #f4de18;*/
 }
 
 .gold_icon{
@@ -91,13 +92,14 @@ a{
 	float: right;
 	text-align: center;
 	color: #f41d2b;
+	/*color: #AF61A6;*/
 }
 
 .real_clock{
 	display: inline-block;
 	padding: 0px 10px;
 	border:none;
-	border-bottom:2px solid red;
+	border-bottom:2px solid #f41d2b;
 	font-weight: bold;
 }
 
@@ -115,7 +117,7 @@ a{
 	transition: 0.4s;
 }
 
-#text{
+.text_icons{
 	/*position: absolute;*/
 	width: 100%;
 	height: 30px;
@@ -128,7 +130,7 @@ a{
 	font-family: input2;
 }
 
-#text::placeholder{
+.text_icons::placeholder{
 	text-align: center;
 	font-family: input;
 	color: black;
@@ -143,14 +145,14 @@ a{
 	top: 2px;
 	border:none;	
 	background:transparent;
-	background-image: url(../icon/search3.png);
+	background-image: url(../icon/search.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 #go_res{
-	top: 9px;
-	left: 30px;
+	top: 8px;
+	left: 10px;
 }
 #go{
 	display: none;
@@ -172,7 +174,8 @@ a{
 	transition: 0.4s;
 	padding-bottom: 10px;
 	font-family: input2a;
-	overflow-y: scroll; 
+	overflow-y: scroll;
+	z-index: 100;
 }
 
 .menu_middle{
@@ -184,6 +187,7 @@ a{
 
 
 .block{
+	position: relative;
 	width: 100%;
 	padding: 5px;
 	border: 2px solid #397dc6;
@@ -196,8 +200,6 @@ a{
 	margin-bottom: 3px;
 	font-family: input2;
 	font-weight: bold;
-	/*background-image: url(../img/images6.jpg);*/
-	/*background: black;*/
 	background-size: cover;
 	background-position: bottom;
 	transition: 0.001s;
@@ -208,13 +210,65 @@ a{
 	border: 2px solid #397dc6;
 }
 
+#go_out input{
+	width: 100%;
+	font-family: input2;
+	background: black;
+	border:none;
+	color: #397dc6;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.icons::after{
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 3px;
+	left: -35px;
+	border:1px solid red;
+}
+
+
+/* Icons START*/
+
+
+.block:nth-child(2)::after{
+	background: url(../svg/profile.svg);
+	background-size: cover;
+	border: none;
+}
+
+.block:nth-child(3)::after{
+	background: url(../svg/race.svg);
+	/*background-size: cover;*/
+	border: none;
+}
+.block:nth-child(4)::after{
+	background: url(../svg/message.svg);
+	background-size: 100% 100%;
+	border: none;
+}
+
+.block:nth-child(5)::after{
+	background: url(../svg/ratings.svg);
+	/*background-size: cover;*/
+	border: none;
+}
+
+
+/* Icons END*/
+
+#go_out:hover input{
+	color: red;
+}
 #go_out:hover a,#go_out:hover {
 	color: red;
 }
 
 #go_out:hover {
-	border:2px solid red;
-	border-left: 45px solid red;
+	border-color:red;
 
 }
 .block:hover a,.block:hover{
@@ -222,9 +276,8 @@ a{
 	cursor: pointer;
 }
 .block:hover{
-	border:2px solid blue;
-	border-left: 45px solid blue;
-	box-shadow: 0 0 100px white;
+	border-color:blue;
+	/*box-shadow: 0 0 100px white;*/
 }
 /*.block:hover .minuss{
 	background-image: url(../icon/minus_green.png);
@@ -378,10 +431,18 @@ a{
 
 @media (max-width: 345px){
 	body{
-		background: white;
+		background: pink;
 	}
 	.property{
 		width: 168px;
 	}
 
 }
+
+
+
+
+/*
+inline       -> width,heigth = 0 , irar koxq = true <span><a>
+block        -> width,heigth > 0 , irar koxq = fasle <div>,<h1-h6>,<p>
+inline-block -> width,heigth > 0 , irar koxq = true <img>,<input>*/

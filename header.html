@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/global/global.css">
 	<script src="Lib/jquery/jquery-3.1.0.min.js"></script>
@@ -34,7 +34,7 @@
 		</div>
 		<div class="div_search">
 			<form action="search.php">
-				<input type="text" id="text" placeholder="Search player">
+				<input type="text" class="text_icons" placeholder="Search player">
 				<input type="submit" value="" id="go">
 			</form>
 			<button id="submit"></button>
@@ -46,20 +46,24 @@
 
 			<div class="block">
 				<form action="search.php">
-					<input type="text" id="text" placeholder="Search player">
+					<input type="text" class="text_icons" placeholder="Search player">
 					<input type="submit" value="" id="go_res">
 				</form>
 			</div>
 
-			<div class="block">
+			<div class="block icons">
 				<a href="profile.php">PROFILE</a>
 			</div>
 
-			<div class="block">
+			<div class="block icons">
+				<a href="message.php">RACES</a>
+			</div>
+
+			<div class="block icons">
 				<a href="message.php">MESSAGE</a>
 			</div>
 
-			<div class="block plus">
+			<div class="block icons plus">
 				<p>RATINGS</p>
 				<div class="symbol minuss"></div>
 				<div class="symbol pluss"></div>
@@ -71,15 +75,15 @@
 			
 
 			<!-- The others -->
-			<div class="block">
+			<div class="block icons">
 				<a href="profile.php">GARAGE</a>
 			</div>
 
-			<div class="block">
+			<div class="block icons">
 				<a href="profile.php">SHOP</a>
 			</div>
 
-			<div class="block plus">
+			<div class="block icons plus">
 				<p>ALLIANCE</p>
 				<div class="symbol minuss"></div>
 				<div class="symbol pluss"></div>
@@ -90,11 +94,11 @@
 				</div>
 			</div>
 
-			<div class="block">
+			<div class="block icons">
 				<a href="profile.php">BANK</a>
 			</div>
 
-			<div class="block plus">
+			<div class="block icons plus">
 				<p>PLAY CITY</p>
 				<div class="symbol minuss"></div>
 				<div class="symbol pluss"></div>
@@ -103,24 +107,18 @@
 				</div>
 			</div>
 
-			<div class="block">
+			<div class="block icons">
 				<a href="profile.php">RULES</a>
 			</div>
 
-			<div class="block plus">
-				<p>SETTINGS</p>
-				<div class="symbol minuss"></div>
-				<div class="symbol pluss"></div>
-				<div class="drop">
-					<div class="drop_down top_border"><a href="profile.php">Password</a></div>
-					<div class="drop_down"><a href="profile.php">Photo</a></div>
-				</div>
+			<div class="block icons plus">
+				<a href="settings.php">Settings</a>
 			</div>
 
-			<div class="block">
-				<a href="profile.php">SIGN OUT</a>
+			<div class="block icons" id="go_out">
+				<form action="">
+					<input type="submit" value="Sign Out">
+				</form>
 			</div>
 		</div>
 	</div>
-</body>
-</html>

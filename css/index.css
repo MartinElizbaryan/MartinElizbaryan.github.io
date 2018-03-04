@@ -19,35 +19,54 @@ https://www.youtube.com/watch?v=rU3KsD0w1-I&index=24&list=RD8nsWMmFYRqE
 @keyframes move_left{
 	0%{
 		right: 30px;
+		width: 20px;
+		height: 20px;
+		border-color: white;
 	}
 	50%{
 		right: 22px;
+		width: 15px;
+		height: 15px;
+		border-color: #f41d2b;
 	}
 	100%{
 		right: 30px;
+		width: 20px;
+		height: 20px;
+		border-color: white;
 	}
 }
 
 @keyframes move_right{
 	0%{
 		left: 30px;
+		width: 20px;
+		height: 20px;
+		border-color: white;
 	}
 	50%{
 		left: 22px;
+		width: 15px;
+		height: 15px;
+		border-color: #f41d2b;
 	}
 	100%{
 		left: 30px;
+		width: 20px;
+		height: 20px;
+		border-color: white;
 	}
 }
 
 body{
-	background-image: url(../bg/docker3.png);
-	background-size: cover;
-	background-position: top center;
-	background-repeat: no-repeat;
+	background: #23538a; /* Old browsers */
+    background: -moz-linear-gradient(top, #23538a 1%, #a7cfdf 50%, #23538a 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #23538a 1%,#a7cfdf 50%,#23538a 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #23538a 1%,#a7cfdf 50%,#23538a 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23538a', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */
 	/*background: black;*/
 	min-height: 100vh;
-
+	position: relative;
 }
 
 
@@ -166,7 +185,6 @@ body{
 .our_carousel{
 	background: black;
 	position: relative;
-	margin-top: 100px;
 	width: 70%;
 	height: 500px;
 	margin: 0 auto;
@@ -243,7 +261,7 @@ body{
 
 .running_text{
 	position: fixed;
-	bottom:20px;
+	bottom:0;
 	width: 100%;
 	background: black;
 	color: white;
@@ -315,7 +333,6 @@ body{
 	margin: 15px;
 	background: transparent;
 	font-size: 25px;
-	color: black;
 	border: none;
 	border-bottom: 2px solid #469e85;
 	border-radius: 20px;
@@ -324,13 +341,55 @@ body{
 	color: white;
 }
 
+.registration_input select{
+	width: 425px;
+	background: transparent;
+	font-size: 25px;
+	border:none;
+	border-bottom:2px solid #469e85;
+	padding: 5px;
+	color: white;
+	font-family: input;
+	padding-left: 30px;
+	border-radius: 20px;
+	margin: 15px;
+	/*appearance: none; */
+}
+.registration_input select option{
+	background: rgba(20,20,20, 0.9);
+	height: 220px;
+	border-radius: 50%;
+	margin: 10px;
+	font-family: input2;
+}
+
+.registration_input select option[value="default"]{
+	background: black;
+	font-family: input ;
+
+}
+
+
+
+#flag_armenia{
+	/*width: 100px!important;*/
+	/*background: url(../icon/armenia.png) no-repeat;*/
+	/*background-size: cover;*/
+	background: red;
+	/*display: inline-block;*/
+	/*float: left;*/
+	width: 10px;
+	height: 10px;
+}
+
 .login_input>form>input:hover, .registration_input>form>input:hover{
 	cursor: pointer;
 }
 
-/*.login_input>form>input::placeholder{
-	color: blue;
-}*/
+.login_input>form>input::placeholder,
+.registration_input>form>input::placeholder{
+	color: white;
+}
 
 .login_input>form>input[type="submit"],.registration_input>form>input[type="submit"]{
 	background: linear-gradient(to right, green, #1AB700);
@@ -444,6 +503,9 @@ body{
 	}
 	.login_show form input,.registration_show form input{
 		width: 80%;
+	}
+	.registration_input select{
+		width: 90%;
 	}
 	.arrow_next{
 		border-top:3px solid;

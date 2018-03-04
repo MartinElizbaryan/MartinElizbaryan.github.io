@@ -20,7 +20,12 @@
     /*cursor:url(../../icon/cursor_white.png),pointer;*/
 }
 
-
+body{
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+select:active,
+select:focus,
 button:active,
 button:focus,
 input:active,
@@ -30,7 +35,7 @@ input:focus{
 
 input:hover{
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 table{
@@ -39,9 +44,12 @@ table{
     font-family: input2;
     width: 80%;
     font-size: 20px;
+    min-width: 800px;
 }
-
-
+th{
+    color: white;
+    font-weight: normal;
+}
 td,th{
     border:3px solid black;
     padding: 5px;
@@ -49,15 +57,28 @@ td,th{
 
 td{
     font-size: 18px;
+    min-width: 60px;
 }
 /*397dc6*/
 tr:nth-child(1),
 tr:nth-child(2){
-    background: #2F61C6;
+    background: #AF61A6;
     font-weight: bold;
 }
 
-tr:hover{
+tr:hover td{
     background: #2F61C6;
 }
 
+.clear{
+    clear: both;
+}
+
+@media (max-width: 570px){
+    table,th,td{
+        font-size: 14px;
+    }
+    table{
+        min-width: 400px;
+    }
+}

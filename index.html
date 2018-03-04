@@ -65,7 +65,13 @@
             <input type="password" placeholder="PASSWORD">
             <input type="password" placeholder="REPASSWORD">
             <input type="email" placeholder="EMAIL">
-            <input type="text" placeholder="COUNTRY">
+            <!-- <input type="text" placeholder="COUNTRY"> -->
+            <select name="" id="">
+                <option value="default" disabled="" selected="">Choose Country</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Russia">Russia</option>
+                <option value="England">England</option>
+            </select>
             <input type="submit" value="Sign In">
         </form>
     </div>    
@@ -120,13 +126,13 @@
                 $(".login_show").fadeOut(500)
             }
             if(e.key== "A"){
-               $(location).attr('href', "__back_end_admin.php");
+               $(location).attr('href', "__back_end_admin.html");
             }
             if(e.key== "D"){
                 $(".running_text").fadeToggle(500)
             }
             if(e.key== "!"){
-               $(location).attr('href', "profile.php");
+               $(location).attr('href', "profile.html");
             }
         })
 
