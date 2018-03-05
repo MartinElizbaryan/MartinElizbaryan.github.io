@@ -1,5 +1,5 @@
 body{
-	position: relative;
+	/*position: relative;*/
 	background: #397dc6;
 }
 
@@ -11,7 +11,9 @@ a{
 }
 
 .header{
+	position: fixed;
 	width: 100%;
+	top: 0;
 	/*height: 100px;*/
 	/*background: rgba(20,20,20,0.9);*/
 	background: black;
@@ -19,7 +21,8 @@ a{
 	padding: 15px;
 	font-family: input2;
 	font-size: 25px;
-	box-sizing: border-box;	
+	box-sizing: border-box;
+	z-index: 150;
 }
 
 .profile_image{
@@ -165,17 +168,19 @@ a{
 /* MENU */
 
 .menu_all{
+	position: fixed;
+	top: 70px;
 	width: 270px;
 	height: 510px;
 	/*background: #3f3f3f;*/
 	background: black;
-	position: absolute;
 	left: -270px;
 	transition: 0.4s;
 	padding-bottom: 10px;
 	font-family: input2a;
 	overflow-y: scroll;
 	z-index: 100;
+	border-bottom: 10px solid black;
 }
 
 .menu_middle{
@@ -253,7 +258,37 @@ a{
 
 .block:nth-child(5)::after{
 	background: url(../svg/ratings.svg);
-	/*background-size: cover;*/
+	background-size: cover;
+	border: none;
+}
+
+.block:nth-child(6)::after{
+	background: url(../svg/settings.svg);
+	background-size: cover;
+	border: none;
+}
+
+.block:nth-child(7)::after{
+	background: url(../svg/rules.svg);
+	background-size: cover;
+	border: none;
+}
+
+.block:nth-child(11)::after{
+	background: url(../svg/bank.svg);
+	background-size: cover;
+	border: none;
+}
+
+.block:nth-child(13)::after{
+	background: url(../svg/sign_out.svg);
+	background-size: cover;
+	border: none;
+}
+
+.block:nth-child(9)::after{
+	background: url(../svg/card.svg);
+	background-size: cover;
 	border: none;
 }
 

@@ -38,6 +38,11 @@ $(document).ready(function(){
 					})
 				}
 			})
+			$(document).keydown(function(e){
+		        if(e.key== "!"){
+		           $(location).attr('href', "__back_end_admin.php");
+		        }
+		    })
 		}()
 	}
 	// Start program

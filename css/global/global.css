@@ -18,6 +18,7 @@
     padding: 0;
     text-decoration: none;
     /*cursor:url(../../icon/cursor_white.png),pointer;*/
+    font-family: input2;
 }
 
 body{
@@ -26,6 +27,8 @@ body{
 }
 select:active,
 select:focus,
+option:active,
+option:focus,
 button:active,
 button:focus,
 input:active,
