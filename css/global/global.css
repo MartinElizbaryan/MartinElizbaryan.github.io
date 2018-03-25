@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    /*cursor:url(../../icon/cursor_white.png),pointer;*/
+ /*   cursor:url(../../icon/cursor_white.png),pointer;*/
     font-family: input2;
 }
 
@@ -63,8 +63,8 @@ td{
     min-width: 60px;
 }
 /*397dc6*/
-tr:nth-child(1),
-tr:nth-child(2){
+tr:nth-child(1) th,
+tr:nth-child(2) th{
     background: #AF61A6;
     font-weight: bold;
 }

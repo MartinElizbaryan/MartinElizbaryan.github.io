@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$(document).keydown(function(e){
-        if(e.key== "!"){
+        if(e.key== "Q"){
            $(location).attr('href', "index.php");
         }
     })

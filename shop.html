@@ -12,7 +12,7 @@
 <body>
 	<div class="header">
 		<div class="profile_image">
-			<img src="icon/menu.png" alt="" width="44" height="44" id="menu">
+			<img src="svg/menu.svg" alt="" width="44" height="44" id="menu">
 			<img src="img/turbulent-blue-patterns-2.jpg" alt="" width="40" height="40" class="img">
 		</div>
 		<div class="property">
@@ -56,11 +56,11 @@
 			</div>
 
 			<div class="block icons">
-				<a href="message.php">RACES</a>
+				<a href="message.html">RACES</a>
 			</div>
 
 			<div class="block icons">
-				<a href="message.php">MESSAGE</a>
+				<a href="message.html">MESSAGE</a>
 			</div>
 
 			<div class="block icons plus">
@@ -68,8 +68,8 @@
 				<div class="symbol minuss"></div>
 				<div class="symbol pluss"></div>
 				<div class="drop">
-					<div class="drop_down top_border"><a href="rating_player.php">Player</a></div>
-					<div class="drop_down"><a href="profile.php">AllianceH</a></div>
+					<div class="drop_down top_border"><a href="rating_player.html">Player</a></div>
+					<div class="drop_down"><a href="profile.html">AllianceH</a></div>
 				</div>
 			</div>
 			
@@ -78,12 +78,12 @@
 			</div>
 
 			<div class="block icons">
-				<a href="profile.php">RULES</a>
+				<a href="profile.html">RULES</a>
 			</div>
 			
 			<!-- The others -->
 			<div class="block icons">
-				<a href="profile.php">GARAGE</a>
+				<a href="profile.html">GARAGE</a>
 			</div>
 
 			<div class="block icons">
@@ -95,14 +95,14 @@
 				<div class="symbol minuss"></div>
 				<div class="symbol pluss"></div>
 				<div class="drop">
-					<div class="drop_down top_border"><a href="profile.php">{{Name}}</a></div>
-					<div class="drop_down"><a href="profile.php">Create</a></div>
-					<div class="drop_down"><a href="profile.php">Join</a></div>
+					<div class="drop_down top_border"><a href="profile.html">{{Name}}</a></div>
+					<div class="drop_down"><a href="profile.html">Create</a></div>
+					<div class="drop_down"><a href="profile.html">Join</a></div>
 				</div>
 			</div>
 
 			<div class="block icons">
-				<a href="profile.php">BANK</a>
+				<a href="profile.html">BANK</a>
 			</div>
 
 			<div class="block icons plus">
@@ -110,8 +110,16 @@
 				<div class="symbol minuss"></div>
 				<div class="symbol pluss"></div>
 				<div class="drop">
-					<div class="drop_down top_border"><a href="profile.php">Race</a></div>
+					<div class="drop_down top_border"><a href="profile.html">Race</a></div>
 				</div>
+			</div>
+
+			<div class="block icons">
+				<a href="news.html">NEWS</a>
+			</div>
+
+			<div class="block icons">
+				<a href="profile.html">ASSESSMENT</a>
 			</div>
 
 
@@ -124,7 +132,6 @@
 		</div>
 	</div>
 
-
 <title>Shop</title>
 <link rel="stylesheet" href="css/shop.css">
 <div class="all">
@@ -132,21 +139,23 @@
 	<div class="select_cars">
 		<div class="day_of_car">Day Of Car</div>
 		<div class="select">
-			<select name="" id="">
-				<option value="class_a">ALL</option>
-				<option value="class_a" selected="">Formula F1</option>
-				<option value="class_b">Class B</option>
-				<option value="class_c">Class C</option>
-				<option value="class_d">Class D</option>
-				<option value="class_e">Class E</option>
-				<option value="class_e">Formula</option>
+			<select name="" id="select_class">
+				<option value="all" selected="">ALL</option>
+				<!-- <option value="class_a">Formula F1</option> -->
+				<option value="a">Class A</option>
+				<option value="b">Class B</option>
+				<option value="c">Class C</option>
+				<option value="d">Class D</option>
+				<option value="e">Class E</option>
+				<option value="f">Class F</option>
+				<!-- <option value="class_e">Formula</option> -->
 			</select>
 
-			<select name="" id="">
-				<option value="class_a">Lamborghini</option>
-				<option value="class_b">Koenigsegg</option>
-				<option value="class_c">TOYOTA</option>
-				<option value="class_d">MINI</option>
+			<select name="" id="select_mark">
+				<option value="all" selected="">ALL</option>
+				<option value="lamborghini">Lamborghini</option>
+				<option value="mercedes">Mercedes</option>
+				<option value="bmw">BMW</option>
 			</select>
 		</div>
 	</div>
@@ -154,7 +163,10 @@
 	<!-- <div class="class_cars">Class A</div> -->
 
 	<div class="class_block">
-		<div class="cars a">
+			
+		
+		<div class="cars a lamborghini">
+			<div class="cars_new">NEW</div>
 			<div class="cars_name">Lamborghini<br> Aventador</div>
 			<div class="small_class">A</div>
 			<div class="cars_img">
@@ -178,8 +190,9 @@
 			</div>
 		</div>
 
-		<div class="cars b">
-			<div class="cars_name">Lamborghini<br> Aventador</div>
+
+		<div class="cars b bmw">
+			<div class="cars_name">BMW<br> M3 E46</div>
 			<div class="small_class">B</div>
 			<div class="cars_img">
 				<img src="img/cars/rang_rover_2.png" width="100%" alt="">
@@ -202,8 +215,8 @@
 			</div>
 		</div>
 
-		<div class="cars c">
-			<div class="cars_name">Lamborghini<br> Aventador</div>
+		<div class="cars c lamborghini">
+			<div class="cars_name">Lamborghini<br> Gallardo</div>
 			<div class="small_class">C</div>
 			<div class="cars_img">
 				<img src="img/cars/rang_rover_2.png" width="100%" alt="">
@@ -226,8 +239,8 @@
 			</div>
 		</div>
 
-		<div class="cars d">
-			<div class="cars_name">Lamborghini<br> Aventador</div>
+		<div class="cars d mercedes">
+			<div class="cars_name">mercedes<br> E-Class</div>
 			<div class="small_class">D</div>
 			<div class="cars_img">
 				<img src="img/cars/rang_rover_2.png" width="100%" alt="">
@@ -250,8 +263,8 @@
 			</div>
 		</div>
 
-		<div class="cars e">
-			<div class="cars_name">Lamborghini<br> Aventador</div>
+		<div class="cars e bmw">
+			<div class="cars_name">BMW<br> X6</div>
 			<div class="small_class">E</div>
 			<div class="cars_img">
 				<img src="img/cars/rang_rover_2.png" width="100%" alt="">
@@ -274,8 +287,8 @@
 			</div>
 		</div>
 
-		<div class="cars f">
-			<div class="cars_name">Lamborghini<br> Aventador</div>
+		<div class="cars f mercedes">
+			<div class="cars_name">Mercedes<br> S-Class</div>
 			<div class="small_class">F</div>
 			<div class="cars_img">
 				<img src="img/cars/rang_rover_2.png" width="100%" alt="">
@@ -298,7 +311,7 @@
 			</div>
 		</div>
 
-		<div class="cars g">
+		<!-- <div class="cars g">
 			<div class="cars_name">Lamborghini<br> Aventador</div>
 			<div class="small_class">G</div>
 			<div class="cars_img">
@@ -416,7 +429,7 @@
 					</form>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		
 		
@@ -470,5 +483,5 @@
 
 
 </body>
-<script src="js/settings.js"></script>
+<script src="js/shop.js"></script>
 </html>

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	function Controller(){
+	function Controller_settings(){
 		var _this = this
 
 		this.myEvents = function(){
@@ -12,16 +12,16 @@ $(document).ready(function(){
 				if(inp2 == inp3 && inp1!="" && inp2!=""&& inp3!=""){
 					console.log("yes")
 					$("#pass input:nth-child(2),#pass input:nth-child(3)").css({
-						background: "url(icon/ok.png)",
+						background: "url(svg/ok.svg)",
 						"background-repeat": "no-repeat",
-						"background-position": "top right"
+						"background-position": "center right 5px"
 					})
 				}else if(inp2!=""&& inp3!=""){
 					console.log("no")
 					$("#pass input:nth-child(2),#pass input:nth-child(3)").css({
-						background: "url(icon/not_ok.png)",
+						background: "url(svg/not_ok.svg)",
 						"background-repeat": "no-repeat",
-						"background-position": "top right"
+						"background-position": "center right 5px"
 					})
 				}
 				else{
@@ -33,5 +33,5 @@ $(document).ready(function(){
 		}()
 	}
 	// Start program
-	var app = new Controller()
+	var app = new Controller_settings()
 })

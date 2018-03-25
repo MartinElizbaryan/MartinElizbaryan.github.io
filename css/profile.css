@@ -99,7 +99,7 @@
 	font-family: input;
 	font-size: 26px;
 	border:none;
-	background: #397DC6;
+	background: transparent;
 }
 
 @media (max-width: 1060px){

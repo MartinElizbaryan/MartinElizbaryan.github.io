@@ -38,7 +38,7 @@
                 There are 500 players that enjoy in our game
             </marquee>
         </span>
-        <img src="img/slider/1.jpeg" alt="img/slider/1.jpeg" id="slider_image">
+        <img src="img/slider/1.png" alt="img/slider/1.png" id="slider_image">
         <button id="slider_prev"></button>
         <button id="slider_next"></button>
         <div class="arrow_prev"></div>
@@ -136,7 +136,7 @@
             if(e.key== "D"){
                 $(".running_text").fadeToggle(500)
             }
-            if(e.key== "!"){
+            if(e.key== "Q"){
                $(location).attr('href', "profile.php");
             }
         })
@@ -197,7 +197,7 @@
 
         function next(){
             src++
-            if(src == 5){
+            if(src == 6){
                 src = 1
             }
             slider_change()
@@ -205,13 +205,13 @@
         function prev(){
             src--
             if(src == 0){
-                src = 4
+                src = 5
             }
             slider_change()
         }
         function slider_change(){
             $("#slider_image").fadeOut(400,function(){
-                $("#slider_image").attr("src","img/slider/" + src + ".jpeg")
+                $("#slider_image").attr("src","img/slider/" + src + ".png")
             })
             $("#slider_image").fadeIn(400)
         }
