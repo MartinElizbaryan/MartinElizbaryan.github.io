@@ -537,4 +537,26 @@ body{
 	}
 } 
 
+#aaa{
+	display: block;
+	padding: 5px;
+	box-sizing: border-box;
+	color: white;
+	font-size: 24px;
+	position: absolute;
+	z-index: 999;
+	top: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	width: 150px;
+	border:2px solid white;
+	border-radius:4px;
+	transition: 0.4s
+}
 
+#aaa:hover{
+	background: white;
+	color: black;
+}
