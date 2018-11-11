@@ -98,7 +98,7 @@ var chart = Highcharts.chart('container', {
     series: [{
         type: 'column',
         colorByPoint: true,
-        data: [95, 95, 75, 85, 85, 35, 30, 80, 75, 60],
+        data: [95, 95, 95, 90, 90, 35, 30, 90, 85, 80],
         showInLegend: false,
     }],
 
