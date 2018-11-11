@@ -51,7 +51,7 @@ p{
 	position: relative;
 	top: -6px;
 	font-weight: bold;
-	background: #72AB00;
+	background: #ff0000;
 	color:white;
 	padding: 2px 15px;
 	border-radius: 5px;
@@ -61,12 +61,12 @@ p{
 
 .a:hover{
 	background: transparent;
-	color: #72AB00;
-	border:1px solid #72AB00;
+	color: #ff0000;
+	border:1px solid #ff0000;
 }
 
 .color_green{
-	color: #72AB00;
+	color: #ff0000;
 	font-weight: bold;
 }
 
@@ -87,7 +87,7 @@ header{
 	box-sizing: border-box;
 	/*background: #000;*/
 	background-color: rgba(220, 220, 220, 1);
-	color: #72AB00;
+	color: #ff0000;
 	font-weight: bold;
 	margin-bottom: 20px;
 	border-bottom: 2px solid rgba(154, 154, 154, 0.46);
@@ -138,7 +138,7 @@ header{
 }
 
 .menu li a{
-	color: #72AB00;
+	color: #ff0000;
 }
 
 .menu li::after{
@@ -146,7 +146,7 @@ header{
 	position: absolute;
 	width: 0%;
 	height: 2px;
-	background: #72AB00;
+	background: #ff0000;
 	bottom: 0;
 	left: 50%;
 	transition: 0.2s;
@@ -250,14 +250,14 @@ header{
 }
 
 .more_skills{
-	border:2px solid #72AB00;
-	color: #72AB00;
+	border:2px solid #ff0000;
+	color: #ff0000;
 	font-weight: bold;
 }
 
 .more_skills:hover{
 	color: #ffffff;
-	background: #72AB00;
+	background: #ff0000;
 	transition: ease 0.4s;
 	cursor: pointer;
 }
@@ -298,7 +298,7 @@ header{
 .about_line{
 	width: 70%;
 	margin: 15px auto;
-	background: #74AB00;
+	background: #ff0000;
 	height: 3px;
 }
 
@@ -314,8 +314,8 @@ header{
 .button a{
 	display: block;
 	padding: 10px 20px;
-	border: 2px solid #72AB00;
-	color:#72AB00;
+	border: 2px solid #ff0000;
+	color:#ff0000;
 	border-radius: 5px;
 	transition: ease 0.4s;
 	font-weight: bold;
@@ -323,7 +323,7 @@ header{
 
 .button a:hover{
 	color:#ffffff;
-	background: #72AB00;
+	background: #ff0000;
 }
 
 .indicator{
@@ -388,7 +388,7 @@ header{
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	border: 2px solid #72AB00;
+	border: 2px solid #ff0000;
 	padding: 8px;
 	border-radius:20px 20px 0 0;
 	transition: ease 0.4s;
@@ -396,7 +396,7 @@ header{
 
 .go_to_up i{
 	margin-right: 0 !important;
-	color: #72AB00;
+	color: #ff0000;
 }
 
 .go_to_up:hover i{
@@ -405,7 +405,7 @@ header{
 
 .go_to_up:hover{
 	cursor: pointer;
-	background: #72AB00;
+	background: #ff0000;
 }
 
 /* buttons */
@@ -414,11 +414,11 @@ header{
 	border-radius: 4px;
     display: inline-block;
     text-align: center;
-    color: #407bc1;
+    color: #ff0000;
     background: none;
     font-size: 12px;
     font-weight: 400;
-    border: 1px solid #407bc1;
+    border: 1px solid #ff0000;
     transition: .4s;
     padding: 5px;
 }
@@ -426,6 +426,6 @@ header{
 .button_blue:hover,
 .button_blue.active {
 	cursor: pointer;
-    background: #3f79bc;
+    background: #ff0000;
     color: #fff;
 }
