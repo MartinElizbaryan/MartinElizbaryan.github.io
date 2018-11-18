@@ -17,21 +17,25 @@ var chart = Highcharts.chart('container', {
         text: 'Languages',
         style: {
             fontWeight: 'bold',
-            fontSize: '20px'
+            fontSize: '20px',
+            color: 'white',
         }
     },
 
     chart: {
-        // plotBorderWidth: 1,
-        
-        // plotBorderColor: '#cccccc'
+        type: 'column',
+        // color: '#ffffff',
+        backgroundColor: "#111111",
+        plotBorderColor: '#FF0000',
+        inverted: true,
+        polar: false
     },
 
     xAxis: {
         categories: ['HTML5', 'CSS3', 'Bootstrap4', 'JavaScript', 'JQuery', 'VueJS', 'Angular1', 'PHP', 'MySQL', 'Laravel'],
         labels: {
             style: {
-                color: 'black',
+                color: 'white',
                 fontSize: "14px",
                 fontWeight: "bold"
             }
@@ -42,7 +46,12 @@ var chart = Highcharts.chart('container', {
 
     yAxis: {
         title: {
-            text: 'Skills percent'
+            text: 'Skills percent',
+
+            style: {
+                color: 'white',
+                fontSize: "16px",
+            }
         },
         labels: {
             formatter: function () {
@@ -50,7 +59,7 @@ var chart = Highcharts.chart('container', {
             },
 
             style: {
-                color: 'black',
+                color: 'white',
                 fontSize: "16px",
             }
         }
@@ -98,44 +107,44 @@ var chart = Highcharts.chart('container', {
     series: [{
         type: 'column',
         colorByPoint: true,
-        data: [95, 95, 95, 90, 90, 35, 30, 90, 85, 80],
+        data: [95, 95, 95, 90, 90, 35, 30, 90, 85, 85],
         showInLegend: false,
     }],
 
 });
 
-$('#plain').click(function () {
-    chart.update({
-        chart: {
-            inverted: false,
-            polar: false
-        },
-    });
-    charts($(this))
-});
+// $('#plain').click(function () {
+//     chart.update({
+//         chart: {
+//             inverted: false,
+//             polar: false
+//         },
+//     });
+//     charts($(this))
+// });
 
-$('#inverted').click(function () {
-    chart.update({
-        chart: {
-            inverted: true,
-            polar: false
-        },
-    });
-    charts($(this))
-});
+// $('#inverted').click(function () {
+//     chart.update({
+//         chart: {
+//             inverted: true,
+//             polar: false
+//         },
+//     });
+//     charts($(this))
+// });
 
-$('#polar').click(function () {
-    chart.update({
-        chart: {
-            inverted: false,
-            polar: true
-        },
-    });
-    charts($(this))
-});
+// $('#polar').click(function () {
+//     chart.update({
+//         chart: {
+//             inverted: false,
+//             polar: true
+//         },
+//     });
+//     charts($(this))
+// });
 
-function charts(it){
-    $(".types_of_chart").removeClass("active")
-    $(it).addClass("active")
-}
+// function charts(it){
+//     $(".types_of_chart").removeClass("active")
+//     $(it).addClass("active")
+// }
 
