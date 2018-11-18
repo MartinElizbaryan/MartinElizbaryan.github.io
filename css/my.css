@@ -32,7 +32,7 @@ a.a{
 /* Header */
 header{
 	width: 100%;
-	max-height: 500px;
+	max-height: 600px;
 	display: flex;	
 }
 
@@ -89,6 +89,10 @@ header{
 	border: 1px solid #ff214f;
 	border-radius: 10px;
 	margin-bottom: 20px;
+	min-width: 200px;
+}
+.last{
+	width: 65%;
 }
 
 .skills p{
@@ -123,4 +127,19 @@ footer{
 
 .go_to_up:hover i {
     color: #111111;
+}
+
+@media (max-width: 1100px){
+	.main_img{
+		display: none;
+	}
+	.main_info{
+		width: 100%;
+	}
+}
+
+@media (max-width: 900px){
+	.about_me{
+		width: 100%;
+	}
 }
