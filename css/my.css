@@ -144,6 +144,21 @@ footer{
     height: 40px;
 }
 
+.go_to_up .fas.fa-arrow-up {
+    transition: ease 0.4s;
+}
+
+
+.go_to_up:hover .fas.fa-arrow-up {
+    transform: rotate(720deg);
+}
+
+
+.go_to_up:hover {
+    cursor: pointer;
+    font-size: 22px;
+}
+
 @media (max-width: 1100px){
 	.main_img{
 		display: none;
