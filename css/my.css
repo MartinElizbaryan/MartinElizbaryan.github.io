@@ -13,7 +13,7 @@ body{
 
 /* Globals */
 a.a{
-	color:#ff214f;
+	color: #2196f3;
 }
 
 .mb50{
@@ -26,6 +26,10 @@ a.a{
 
 .red_text{
 	color: #ff214f;
+}
+
+.blue_text{
+	color: #2196f3;
 }
 
 
@@ -45,7 +49,7 @@ header{
 	margin-bottom: 10px;
 }
 
-.main_info p.red_text{
+.main_info p.blue_text{
 	line-height: 1;
 	margin-bottom: 0;
 }
@@ -85,8 +89,9 @@ header{
 
 .about_me{
 	width: 30%;
-	padding: 10px;
-	border: 1px solid #ff214f;
+	padding: 10px;	
+	/*border: 1px solid #ff214f;*/
+	border: 1px solid #2196f3;
 	border-radius: 10px;
 	margin-bottom: 20px;
 	min-width: 200px;
