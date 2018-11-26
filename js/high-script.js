@@ -63,8 +63,11 @@ var chart = Highcharts.chart('container', {
             style: {
                 color: 'white',
                 fontSize: "16px",
-            }
-        }
+            },
+        },
+
+        // categories: ['10', '20', '30', '40', '50', '60',
+        //     '70', '80', '90', '100']
     },
 
     tooltip: {
