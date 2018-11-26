@@ -24,11 +24,13 @@ var chart = Highcharts.chart('container', {
 
     chart: {
         type: 'column',
+        height: 600,
         // color: '#ffffff',
         backgroundColor: "#111111",
         plotBorderColor: '#FF0000',
         inverted: true,
-        polar: false
+        polar: false,
+
     },
 
     xAxis: {
@@ -147,4 +149,3 @@ var chart = Highcharts.chart('container', {
 //     $(".types_of_chart").removeClass("active")
 //     $(it).addClass("active")
 // }
-
