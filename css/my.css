@@ -6,8 +6,8 @@
 }
 
 body{
-	background: #1a1c20;
-	color:#ffffff;
+	/*background: #1a1c20;*/
+	color:#000000;
 }
 
 
@@ -20,7 +20,7 @@ a.a{
 	margin-bottom: 50px;
 }
 .dk_bg{
-	background: #111111;
+	background: #f3f3f3;
 	width: 100%;
 }
 

@@ -18,15 +18,15 @@ var chart = Highcharts.chart('container', {
         style: {
             fontWeight: 'bold',
             fontSize: '20px',
-            color: 'white',
+            color: 'black',
         }
     },
 
     chart: {
         type: 'column',
         height: 600,
-        // color: '#ffffff',
-        backgroundColor: "#111111",
+        // color: '#000000',
+        backgroundColor: "#f3f3f3",
         plotBorderColor: '#FF0000',
         inverted: true,
         polar: false,
@@ -37,7 +37,7 @@ var chart = Highcharts.chart('container', {
         categories: ['HTML5', 'CSS3', 'Bootstrap4', 'JavaScript', 'JQuery', 'VueJS', 'Angular1', 'PHP', 'MySQL', 'Laravel'],
         labels: {
             style: {
-                color: 'white',
+                color: 'black',
                 fontSize: "14px",
                 fontWeight: "bold"
             }
@@ -51,7 +51,7 @@ var chart = Highcharts.chart('container', {
             text: 'Skills percent',
 
             style: {
-                color: 'white',
+                color: 'black',
                 fontSize: "16px",
             }
         },
@@ -61,7 +61,7 @@ var chart = Highcharts.chart('container', {
             },
 
             style: {
-                color: 'white',
+                color: 'black',
                 fontSize: "16px",
             },
         },
