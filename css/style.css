@@ -6519,3 +6519,7 @@ File: scss
 .bg-laravel{
   background: #fa503a;
 }
+
+.overflow-hidden{
+  overflow: hidden;
+}
