@@ -1,0 +1,11 @@
+https://themes.3rdwavemedia.com/devcard/bs4/2.0/blog-post.html
+
+icons
+
+NodeJS    - <i class="fab fa-node-js"></i>
+AngularJS - <i class="fab fa-angular"></i>
+Python    - <i class="fab fa-python"></i>
+Gulp      - <i class="fab fa-gulp mr-2"></i>
+Grunt     - <i class="fab fa-grunt"></i>
+Sass      - <i class="fab fa-sass mr-2"></i
+Less      - <i class="fab fa-less"></i>
