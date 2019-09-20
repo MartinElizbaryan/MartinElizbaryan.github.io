@@ -1,0 +1,8 @@
+@font-face {
+  font-family: Armenia;
+  src: url(fonts/Aramian_Expanded_Italic.ttf);
+}
+
+body{
+	font-family: 'Armenia';
+}
