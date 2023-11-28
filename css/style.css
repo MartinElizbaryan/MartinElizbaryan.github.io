@@ -17,3 +17,10 @@
 .fz24{
 	font-size: 24px;
 }
+
+.website{
+	background: #e4e4e4;
+    padding: 50px;
+    border-radius: 10px;
+	margin-bottom: 50px;
+}
